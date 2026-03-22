@@ -1,0 +1,496 @@
+﻿{
+    "generatedAt":  "2026-03-22T18:14:42.6194548Z",
+    "sourceFolder":  "videos para adicionar",
+    "disciplinas":  [
+                        {
+                            "id":  "ciencias-da-natureza",
+                            "nome":  "Ciências da Natureza"
+                        },
+                        {
+                            "id":  "ciencias-humanas-e-sua-tecnologias",
+                            "nome":  "Ciências Humanas e sua Tecnologias"
+                        },
+                        {
+                            "id":  "linguagens-codigos-e-suas-tecnologias",
+                            "nome":  "Linguagens Códigos e suas Tecnologias"
+                        },
+                        {
+                            "id":  "matematica-e-suas-tecnologias",
+                            "nome":  "Matemática e suas Tecnologias"
+                        }
+                    ],
+    "termos":  [
+                   {
+                       "id":  "ciencias-da-natureza-alimentacao-balanceada",
+                       "termo":  "Alimentação Balanceada",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Alimentação Balanceada.mp4",
+                       "explicacao":  "Alimentação Balanceada e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-alimentos-construtores",
+                       "termo":  "Alimentos Construtores",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Alimentos Construtores.mp4",
+                       "explicacao":  "Alimentos Construtores e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-alimentos-energeticos",
+                       "termo":  "Alimentos Energéticos",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Alimentos Energéticos.mp4",
+                       "explicacao":  "Alimentos Energéticos e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-alimentos-reguladores",
+                       "termo":  "Alimentos Reguladores",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Alimentos Reguladores.mp4",
+                       "explicacao":  "Alimentos Reguladores e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-alveolo-pulmonar",
+                       "termo":  "Alvéolo Pulmonar",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Alvéolo Pulmonar.mp4",
+                       "explicacao":  "Alvéolo Pulmonar e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-amarelao",
+                       "termo":  "Amarelão",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Amarelão.mp4",
+                       "explicacao":  "Amarelão e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-androceu",
+                       "termo":  "Androceu",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Androceu.mp4",
+                       "explicacao":  "Androceu e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-angiosperma",
+                       "termo":  "Angiosperma",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Angiosperma.mp4",
+                       "explicacao":  "Angiosperma e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-antibiotico",
+                       "termo":  "Antibiótico",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Antibiótico.mp4",
+                       "explicacao":  "Antibiótico e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-anticorpo-1",
+                       "termo":  "Anticorpo 1",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Anticorpo 1.mp4",
+                       "explicacao":  "Anticorpo 1 e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-anticorpo-2",
+                       "termo":  "Anticorpo 2",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Anticorpo 2.mp4",
+                       "explicacao":  "Anticorpo 2 e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-antigeno",
+                       "termo":  "Antígeno",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Antígeno.mp4",
+                       "explicacao":  "Antígeno e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-apendice",
+                       "termo":  "Apêndice",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Apêndice.mp4",
+                       "explicacao":  "Apêndice e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-aquecimento-global",
+                       "termo":  "Aquecimento Global",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Aquecimento Global.mp4",
+                       "explicacao":  "Aquecimento Global e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-aracnideos",
+                       "termo":  "Aracnídeos",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Aracnídeos.mp4",
+                       "explicacao":  "Aracnídeos e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-arterias-1",
+                       "termo":  "Artérias 1",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Artérias 1.mp4",
+                       "explicacao":  "Artérias 1 e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-arterias-2",
+                       "termo":  "Artérias 2",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Artérias 2.mp4",
+                       "explicacao":  "Artérias 2 e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-ascaridiase",
+                       "termo":  "Ascaridíase",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Ascaridíase.mp4",
+                       "explicacao":  "Ascaridíase e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-da-natureza-asma",
+                       "termo":  "Asma",
+                       "disciplinaId":  "ciencias-da-natureza",
+                       "disciplinaNome":  "Ciências da Natureza",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências da Natureza-20260317T000227Z-1-001/Ciências da Natureza/Asma.mp4",
+                       "explicacao":  "Asma e um conceito importante em Ciências da Natureza dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-abdicar-trono",
+                       "termo":  "Abdicar trono",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Abdicar trono.mp4",
+                       "explicacao":  "Abdicar trono e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-absolutismo",
+                       "termo":  "Absolutismo",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Absolutismo.mp4",
+                       "explicacao":  "Absolutismo e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-africa-do-sul",
+                       "termo":  "África do Sul",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/África do Sul.mp4",
+                       "explicacao":  "África do Sul e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-alforria",
+                       "termo":  "Alforria",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Alforria.mp4",
+                       "explicacao":  "Alforria e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-alma",
+                       "termo":  "Alma",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Alma.mp4",
+                       "explicacao":  "Alma e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-altitude",
+                       "termo":  "Altitude",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Altitude.mp4",
+                       "explicacao":  "Altitude e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-america-latina",
+                       "termo":  "América Latina",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/América Latina.mp4",
+                       "explicacao":  "América Latina e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-antes-de-cristo",
+                       "termo":  "Antes de Cristo",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Antes de Cristo.mp4",
+                       "explicacao":  "Antes de Cristo e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-antropologia",
+                       "termo":  "Antropologia",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Antropologia.mp4",
+                       "explicacao":  "Antropologia e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-apogeu",
+                       "termo":  "Apogeu",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Apogeu.mp4",
+                       "explicacao":  "Apogeu e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-argentina",
+                       "termo":  "Argentina",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Argentina.mp4",
+                       "explicacao":  "Argentina e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-aristoteles",
+                       "termo":  "Aristóteles",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Aristóteles.mp4",
+                       "explicacao":  "Aristóteles e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "ciencias-humanas-e-sua-tecnologias-assembleia-legislativa",
+                       "termo":  "Assembleia Legislativa",
+                       "disciplinaId":  "ciencias-humanas-e-sua-tecnologias",
+                       "disciplinaNome":  "Ciências Humanas e sua Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Assembleia Legislativa.mp4",
+                       "explicacao":  "Assembleia Legislativa e um conceito importante em Ciências Humanas e sua Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-abstrato",
+                       "termo":  "Abstrato",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Abstrato.mp4",
+                       "explicacao":  "Abstrato e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-adjetivo",
+                       "termo":  "Adjetivo",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Adjetivo.mp4",
+                       "explicacao":  "Adjetivo e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-adverbio",
+                       "termo":  "Advérbio",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Advérbio.mp4",
+                       "explicacao":  "Advérbio e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-alfabetizacao",
+                       "termo":  "Alfabetização",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Alfabetização.mp4",
+                       "explicacao":  "Alfabetização e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-aliteracao",
+                       "termo":  "Aliteração",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Aliteração.mp4",
+                       "explicacao":  "Aliteração e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-ambiguidade",
+                       "termo":  "Ambiguidade",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Ambiguidade.mp4",
+                       "explicacao":  "Ambiguidade e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-antitese",
+                       "termo":  "Antítese",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Antítese.mp4",
+                       "explicacao":  "Antítese e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-aplicativo",
+                       "termo":  "Aplicativo",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Aplicativo.mp4",
+                       "explicacao":  "Aplicativo e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-arcadismo",
+                       "termo":  "Arcadismo",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Arcadismo.mp4",
+                       "explicacao":  "Arcadismo e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-argumento",
+                       "termo":  "Argumento",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Argumento.mp4",
+                       "explicacao":  "Argumento e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-assonancia",
+                       "termo":  "Assonância",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Assonância.mp4",
+                       "explicacao":  "Assonância e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-aumentativo",
+                       "termo":  "Aumentativo",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Aumentativo.mp4",
+                       "explicacao":  "Aumentativo e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-autor",
+                       "termo":  "Autor",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Autor.mp4",
+                       "explicacao":  "Autor e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "linguagens-codigos-e-suas-tecnologias-avaliacao",
+                       "termo":  "Avaliação",
+                       "disciplinaId":  "linguagens-codigos-e-suas-tecnologias",
+                       "disciplinaNome":  "Linguagens Códigos e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Linguagens Códigos e suas Tecnologias-20260317T000238Z-1-001/Linguagens Códigos e suas Tecnologias/Avaliação.mp4",
+                       "explicacao":  "Avaliação e um conceito importante em Linguagens Códigos e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-adicao",
+                       "termo":  "Adição",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Adição.mp4",
+                       "explicacao":  "Adição e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-algoritmo",
+                       "termo":  "Algoritmo",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Algoritmo.mp4",
+                       "explicacao":  "Algoritmo e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-centenas",
+                       "termo":  "Centenas",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Centenas.mp4",
+                       "explicacao":  "Centenas e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-centimetro",
+                       "termo":  "Centímetro",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Centímetro.mp4",
+                       "explicacao":  "Centímetro e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-dezena",
+                       "termo":  "Dezena",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Dezena.mp4",
+                       "explicacao":  "Dezena e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-divisao",
+                       "termo":  "Divisão",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Divisão.mp4",
+                       "explicacao":  "Divisão e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-dobro",
+                       "termo":  "Dobro",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Dobro.mp4",
+                       "explicacao":  "Dobro e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-estatistica",
+                       "termo":  "Estatística",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Estatística.mp4",
+                       "explicacao":  "Estatística e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-expressao-aritmetica",
+                       "termo":  "Expressão Aritmética",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Expressão Aritmética.mp4",
+                       "explicacao":  "Expressão Aritmética e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-formas-geometricas",
+                       "termo":  "Formas Geométricas",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Formas Geométricas.mp4",
+                       "explicacao":  "Formas Geométricas e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-fracao",
+                       "termo":  "Fração",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Fração.mp4",
+                       "explicacao":  "Fração e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-geometria",
+                       "termo":  "Geometria",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Geometria.mp4",
+                       "explicacao":  "Geometria e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   },
+                   {
+                       "id":  "matematica-e-suas-tecnologias-grafico",
+                       "termo":  "Gráfico",
+                       "disciplinaId":  "matematica-e-suas-tecnologias",
+                       "disciplinaNome":  "Matemática e suas Tecnologias",
+                       "videoPath":  "videos para adicionar/720p_mp4/Matemática e suas Tecnologias-20260317T000243Z-1-001/Matemática e suas Tecnologias/Gráfico.mp4",
+                       "explicacao":  "Gráfico e um conceito importante em Matemática e suas Tecnologias dentro das ciencias. Esse termo ajuda a entender fenomenos e processos de forma objetiva."
+                   }
+               ]
+}

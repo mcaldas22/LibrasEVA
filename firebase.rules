@@ -1,0 +1,95 @@
+// ═══════════════════════════════════════════════════════════════════════
+//  LibrasEVA – Firebase Security Rules  (firebase.rules)
+//
+//  Copie o conteúdo de cada seção para o Console Firebase:
+//    • Firestore: Firestore Database → Regras
+//    • Storage:   Storage → Regras
+//
+//  Depois publique com:  firebase deploy --only firestore:rules,storage
+// ═══════════════════════════════════════════════════════════════════════
+
+// ── FIRESTORE RULES ────────────────────────────────────────────────────
+/*
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Funções auxiliares ─────────────────────────────────────────────
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isAdmin() {
+      return isAuthenticated() && request.auth.uid == "REPLACE_WITH_ADMIN_UID";
+    }
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+    function validTermFields() {
+      let d = request.resource.data;
+      return d.termo is string && d.termo.size() > 0
+          && d.disciplina in ["biologia","quimica","fisica","genetica","banco"]
+          && d.videoUrl is string;
+    }
+
+    // ── /terms  (sinais aprovados) ─────────────────────────────────────
+    match /terms/{termoId} {
+      allow read: if true;                        // público
+      allow create, update, delete: if isAdmin(); // só admin
+
+      // Sub-coleção de avaliações
+      match /ratings/{uid} {
+        allow read: if true;
+        allow write: if isOwner(uid);             // cada usuário avalia uma vez
+      }
+    }
+
+    // ── /pending  (aguardando moderação) ──────────────────────────────
+    match /pending/{docId} {
+      allow read: if isAdmin();
+      allow create: if isAuthenticated() && validTermFields();
+      allow update, delete: if isAdmin();
+    }
+
+    // ── /users  (perfil, favoritos, pontos) ───────────────────────────
+    match /users/{uid} {
+      allow read: if true;                        // leaderboard é público
+      allow write: if isOwner(uid) || isAdmin();
+    }
+
+    // ── /notifications  (admin) ───────────────────────────────────────
+    match /notifications/{docId} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
+
+*/
+
+// ── STORAGE RULES ─────────────────────────────────────────────────────
+/*
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Vídeos de sinais – upload por usuários autenticados (máx 100 MB)
+    match /videos/{uid}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.auth.uid == uid
+                   && request.resource.size < 100 * 1024 * 1024
+                   && request.resource.contentType.matches("video/.*");
+    }
+
+    // Thumbnails
+    match /thumbs/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches("image/.*");
+    }
+  }
+}
+
+*/

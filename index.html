@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <meta name="description" content="LibrasEVA – Plataforma interativa de aprendizagem científica em Libras" />
+  <title>LibrasEVA – Aprenda Ciência em Libras</title>
+
+  <!-- Manifesto PWA (Progressive Web App) -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Favicon dinâmico via SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>" />
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA INICIAL – grande botão INICIAR estilo jogo
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-start" class="screen active">
+    <div class="start-bg">
+      <div class="start-particles" aria-hidden="true">
+        <!-- Partículas decorativas geradas via CSS -->
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+      <div class="start-content">
+        <div class="start-logo" aria-hidden="true">🔬</div>
+        <h1 class="start-title">LibrasEVA</h1>
+        <p class="start-subtitle">
+          Plataforma Interativa de<br>
+          Aprendizagem Científica em Libras
+        </p>
+        <button id="btn-iniciar" class="btn-start" onclick="irParaMenu()" aria-label="Iniciar plataforma">
+          ▶&nbsp;INICIAR
+        </button>
+        <p class="start-hint">Biologia · Química · Física · Genética</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DO TERMO (pagina dedicada)
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-term" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaDisciplinaAtual()">← Voltar</button>
+      <h2 class="topbar-title" id="term-page-title">Termo</h2>
+    </header>
+
+    <main class="disc-main">
+      <p id="term-page-disc" class="text-muted"></p>
+      <video id="term-page-video" controls playsinline preload="metadata" class="auto-termo-video"></video>
+      <div id="term-page-videos-list" class="auto-termos-tabs"></div>
+      <p id="term-page-desc" class="modal-transcricao"></p>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MENU PRINCIPAL – grade de disciplinas com círculos coloridos
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-menu" class="screen">
+
+    <!-- Barra superior fixa -->
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaStart()" title="Página inicial">🏠</button>
+      <h2 class="topbar-title">LibrasEVA</h2>
+      <div class="topbar-actions">
+        <button class="btn-icon" onclick="irParaBusca()" title="Buscar termos">🔍</button>
+        <!-- Botão de login/perfil – texto muda conforme estado -->
+        <button class="btn-icon" id="btn-auth" onclick="toggleLogin()" title="Entrar / Sair">👤</button>
+        <!-- Botão admin – visível só para o administrador configurado -->
+        <button class="btn-icon" id="btn-admin-nav" onclick="irParaAdmin()" title="Painel Admin" style="display:none">⚙️</button>
+      </div>
+    </header>
+
+    <main class="menu-main">
+      <!-- Boas-vindas e nome do usuário logado -->
+      <div class="menu-boas-vindas">
+        <p>Escolha uma disciplina para começar</p>
+        <p id="usuario-nome" class="usuario-nome"></p>
+      </div>
+
+      <!-- Grade responsiva de disciplinas (círculos coloridos) -->
+      <div class="disciplinas-grid" role="navigation" aria-label="Disciplinas">
+        <!-- Preenchido dinamicamente por renderGridDisciplinas() no script.js -->
+      </div><!-- /disciplinas-grid -->
+
+      <!-- Conteúdo de ranking removido no modo local por regra do projeto -->
+
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA AUTOMATICA - matérias e abas por termo (videos para adicionar)
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-auto-tabs" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">📁 Conteudos Automaticos</h2>
+    </header>
+
+    <main class="auto-main">
+      <aside class="auto-materias">
+        <h3>Materias</h3>
+        <div id="auto-materias-nav" class="auto-materias-nav"></div>
+      </aside>
+
+      <section class="auto-termos">
+        <div id="auto-termos-tabs" class="auto-termos-tabs" role="tablist" aria-label="Abas de termos"></div>
+        <article id="auto-termo-content" class="auto-termo-content" aria-live="polite">
+          <p class="empty-msg">Selecione uma materia e um termo para visualizar.</p>
+        </article>
+      </section>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DE DISCIPLINA – lista de termos com miniatura
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-discipline" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title" id="disc-titulo">Disciplina</h2>
+      <button class="btn-icon" onclick="irParaBusca()">🔍</button>
+    </header>
+
+    <main class="disc-main">
+      <!-- Busca inline para filtrar dentro da disciplina -->
+      <div class="busca-inline">
+        <input type="search" id="busca-disc-input"
+               placeholder="Filtrar termos…"
+               aria-label="Filtrar termos da disciplina"
+               oninput="filtrarTermosDisc(this.value)" />
+      </div>
+
+      <!-- Grade de cards de termos -->
+      <div class="termos-grid" id="termos-grid" aria-live="polite">
+        <!-- Preenchido dinamicamente por renderTermos() no script.js -->
+      </div>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DE BUSCA GLOBAL
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-search" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">🔍 Buscar</h2>
+    </header>
+
+    <main class="search-main">
+      <div class="busca-global">
+        <input type="search" id="busca-global-input"
+               placeholder="Digite um termo científico…"
+               aria-label="Busca global de termos"
+               oninput="buscarGlobal(this.value)"
+               autofocus />
+      </div>
+      <div class="termos-grid" id="busca-resultados" aria-live="polite">
+        <p class="empty-msg">Digite algo para buscar…</p>
+      </div>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DE UPLOAD / CONTRIBUIÇÃO
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-upload" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">➕ Contribuir</h2>
+    </header>
+
+    <main class="upload-main">
+      <!-- Aviso: usuário deve estar logado -->
+      <div class="card-aviso" id="upload-aviso-login" style="display:none" aria-live="assertive">
+        <p>⚠️ Você precisa fazer login para contribuir com um sinal.</p>
+        <button class="btn-primario" onclick="toggleLogin()">🔑 Entrar com Google</button>
+      </div>
+
+      <!-- Formulário principal de upload -->
+      <form id="form-upload" class="form-upload" onsubmit="enviarUpload(event)" novalidate>
+        <h3>📹 Enviar Novo Sinal em Libras</h3>
+
+        <label for="up-termo">Nome do termo / sinal *
+          <input type="text" id="up-termo" required placeholder="Ex: Mitocôndria" />
+        </label>
+
+        <label for="up-disc">Disciplina *
+          <select id="up-disc" required>
+            <option value="">— selecione —</option>
+            <option value="biologia">Biologia</option>
+            <option value="quimica">Química</option>
+            <option value="fisica">Física</option>
+            <option value="genetica">Genética</option>
+            <option value="banco">Banco de Sinais</option>
+          </select>
+        </label>
+
+        <label for="up-desc">Transcrição / Descrição *
+          <textarea id="up-desc" required rows="3"
+                    placeholder="Descreva brevemente o que o sinal representa…"></textarea>
+        </label>
+
+        <label for="up-video-url">URL do Vídeo (YouTube, Google Drive, etc.)
+          <input type="url" id="up-video-url" placeholder="https://" />
+        </label>
+
+        <label for="up-video-file">OU envie arquivo de vídeo (.mp4, .webm)
+          <input type="file" id="up-video-file" accept="video/mp4,video/webm" />
+        </label>
+
+        <label for="up-thumb">Imagem de capa (opcional)
+          <input type="file" id="up-thumb" accept="image/*" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primario" id="btn-submit-upload">
+            📤 Enviar para Revisão
+          </button>
+        </div>
+        <p class="form-info">
+          ℹ️ Seu envio ficará em análise e será publicado após aprovação do moderador.
+        </p>
+      </form>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PAINEL ADMIN – moderação de envios pendentes
+       Visível apenas para auth.currentUser.uid === ADMIN_UID
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-admin" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">⚙️ Painel Admin</h2>
+    </header>
+
+    <main class="admin-main">
+      <!-- Mensagem de acesso negado (exibida quando não é admin) -->
+      <div id="admin-acesso-negado" class="card-aviso card-erro" style="display:none">
+        ⛔ Acesso restrito a administradores.
+      </div>
+
+      <!-- Conteúdo do painel (visível só para admins) -->
+      <div id="admin-conteudo">
+        <div class="admin-tabs">
+          <button class="tab-btn active" onclick="adminMostrarAba('pendentes')">
+            Pendentes <span id="pendentes-count" class="badge"></span>
+          </button>
+          <button class="tab-btn" onclick="adminMostrarAba('aprovados')">
+            Aprovados
+          </button>
+          <button class="tab-btn" onclick="adminMostrarAba('rejeitados')">
+            Rejeitados
+          </button>
+        </div>
+
+        <!-- Lista de itens pendentes -->
+        <div id="aba-pendentes" class="aba-conteudo">
+          <div id="pendentes-lista" aria-live="polite">
+            <p class="empty-msg">Nenhum item pendente.</p>
+          </div>
+        </div>
+
+        <div id="aba-aprovados" class="aba-conteudo" style="display:none">
+          <div id="aprovados-lista"></div>
+        </div>
+
+        <div id="aba-rejeitados" class="aba-conteudo" style="display:none">
+          <div id="rejeitados-lista"></div>
+        </div>
+
+        <!-- Botão de exportar pacote didático (ZIP) -->
+        <div class="admin-export">
+          <h3>📦 Exportar Pacote Didático</h3>
+          <p>Gera um arquivo ZIP com todos os termos aprovados e seus metadados.</p>
+          <button class="btn-secundario" onclick="exportarPacote()">
+            ⬇️ Baixar ZIP
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DE LEADERBOARD
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-leaderboard" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">🏆 Ranking de Contribuidores</h2>
+    </header>
+
+    <main class="leaderboard-main">
+      <p class="lb-subtitulo">Os maiores contribuidores da plataforma</p>
+      <ol id="leaderboard-completo" class="leaderboard-completo" aria-live="polite">
+        <li class="empty-msg">Carregando…</li>
+      </ol>
+    </main>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TELA DE CONTRIBUIÇÕES – em breve
+       ═══════════════════════════════════════════════════════ -->
+  <section id="screen-contribuicoes-breve" class="screen">
+    <header class="topbar">
+      <button class="btn-icon" onclick="irParaMenu()">← Voltar</button>
+      <h2 class="topbar-title">✍️ Contribuições</h2>
+    </header>
+
+    <main class="menu-main">
+      <div class="menu-boas-vindas">
+        <div style="text-align: center; padding: 60px 20px;">
+          <div style="font-size: 80px; margin-bottom: 20px;">⏳</div>
+          <h2 style="font-size: 28px; margin-bottom: 10px; color: #333;">Em Breve!</h2>
+          <p style="font-size: 16px; color: #666; line-height: 1.6;">
+            A área de contribuições está sendo preparada para que você possa compartilhar seus sinais científicos com toda a comunidade.
+          </p>
+          <p style="font-size: 14px; color: #999; margin-top: 30px;">
+            Fique atento às próximas atualizações! 🚀
+          </p>
+        </div>
+      </div>
+    </main>
+  </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+      MODAL legado (nao utilizado no modo local)
+      ═══════════════════════════════════════════════════════ -->
+  <div id="modal-player" class="modal-overlay" style="display:none"
+       role="dialog" aria-modal="true" aria-labelledby="modal-titulo"
+       onclick="fecharModalFora(event)">
+
+    <div class="modal-box">
+      <!-- Botão fechar -->
+      <button class="modal-fechar" onclick="fecharPlayer()" aria-label="Fechar player">✕</button>
+
+      <!-- Área do vídeo local -->
+      <div class="player-wrapper" id="player-wrapper">
+        <!-- Vídeo HTML5 (para arquivos locais ou URL direta) -->
+        <video id="modal-video" controls playsinline preload="metadata">
+          <source id="modal-video-src" src="" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div><!-- /player-wrapper -->
+
+      <!-- Informações do termo -->
+      <div class="modal-info">
+        <h2 id="modal-titulo" class="modal-termo-titulo"></h2>
+        <span id="modal-disc-badge" class="disc-badge"></span>
+        <p id="modal-transcricao" class="modal-transcricao"></p>
+        <p class="modal-contribuinte">
+          Contribuído por: <strong id="modal-contribuinte">—</strong>
+        </p>
+      </div>
+
+      <!-- Ações sociais removidas no modo local por regra do projeto -->
+    </div><!-- /modal-box -->
+  </div><!-- /modal-player -->
+
+  <!-- ═══════════════════════════════════════════════════════
+       TOAST – mensagem de feedback não invasiva
+       ═══════════════════════════════════════════════════════ -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════════════════ -->
+
+  <!--
+    O script.js usa ES Modules e importa o SDK do Firebase dinamicamente.
+    Se firebaseConfig.apiKey === "REPLACE_ME", usa automaticamente
+    o fallback data/terms.json (sem necessidade de Firebase).
+  -->
+  <script type="module" src="script.js"></script>
+
+  <!-- Registro do Service Worker é centralizado no script.js -->
+
+</body>
+</html>

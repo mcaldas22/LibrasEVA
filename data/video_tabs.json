@@ -1,0 +1,35 @@
+﻿{
+    "generatedAt":  "2026-03-17T00:51:21.9061555Z",
+    "sourceFolder":  "videos para adicionar",
+    "totalVideos":  3,
+    "totalTermosUnicos":  3,
+    "terms":  [
+                  {
+                      "id":  "absolutismo",
+                      "termo":  "Absolutismo",
+                      "materia":  "Ciencias Humanas",
+                      "videoPath":  "videos para adicionar/_extraido/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Absolutismo.mp4",
+                      "explicacao":  "Absolutismo e um conceito relevante dentro da area de Ciencias Humanas. Ele contribui para interpretar conteudos academicos e contextos reais. Com essa base, o estudo fica mais organizado e acessivel em Libras.",
+                      "fonteArquivo":  "Absolutismo.mp4",
+                      "atualizadoEm":  "2026-03-17T00:51:21.8751808Z"
+                  },
+                  {
+                      "id":  "africa-do-sul",
+                      "termo":  "África do Sul",
+                      "materia":  "Ciencias Humanas",
+                      "videoPath":  "videos para adicionar/_extraido/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/África do Sul.mp4",
+                      "explicacao":  "África do Sul e um conceito relevante dentro da area de Ciencias Humanas. Ele contribui para interpretar conteudos academicos e contextos reais. Com essa base, o estudo fica mais organizado e acessivel em Libras.",
+                      "fonteArquivo":  "África do Sul.mp4",
+                      "atualizadoEm":  "2026-03-17T00:51:21.8940500Z"
+                  },
+                  {
+                      "id":  "alforria",
+                      "termo":  "Alforria",
+                      "materia":  "Ciencias Humanas",
+                      "videoPath":  "videos para adicionar/_extraido/Ciências Humanas e sua Tecnologias-20260317T000233Z-1-001/Ciências Humanas e sua Tecnologias/Alforria.mp4",
+                      "explicacao":  "Alforria e um conceito relevante dentro da area de Ciencias Humanas. Ele contribui para interpretar conteudos academicos e contextos reais. Com essa base, o estudo fica mais organizado e acessivel em Libras.",
+                      "fonteArquivo":  "Alforria.mp4",
+                      "atualizadoEm":  "2026-03-17T00:51:21.8930521Z"
+                  }
+              ]
+}

@@ -1,0 +1,323 @@
+{
+  "disciplinas": [
+    {
+      "id": "ciencias-natureza",
+      "label": "Ciências da Natureza",
+      "termos": [
+        {
+          "id": "alimentacao-balanceada",
+          "nome": "Alimentação Balanceada",
+          "descricao": "Alimentação equilibrada que inclui todos os nutrientes necessários para manter a saúde. Deve conter carboidratos, proteínas, gorduras, vitaminas, minerais e água em proporções adequadas."
+        },
+        {
+          "id": "alimentos-construtores",
+          "nome": "Alimentos Construtores",
+          "descricao": "Alimentos ricos em proteínas que desenvolvem e reparam os tecidos do corpo. Exemplos incluem carnes, ovos, leite e leguminosas que são fundamentais para o crescimento."
+        },
+        {
+          "id": "alimentos-energeticos",
+          "nome": "Alimentos Energéticos",
+          "descricao": "Alimentos ricos em carboidratos e gorduras que fornecem energia para as atividades diárias. Incluem pão, arroz, batata e óleos que são combustível para o corpo."
+        },
+        {
+          "id": "alimentos-reguladores",
+          "nome": "Alimentos Reguladores",
+          "descricao": "Alimentos ricos em vitaminas, minerais e fibras que regulam as funções do corpo. Frutas, verduras e legumes mantêm o metabolismo funcionando corretamente."
+        },
+        {
+          "id": "alveolo-pulmonar",
+          "nome": "Alvéolo Pulmonar",
+          "descricao": "Pequenas estruturas esféricas nos pulmões onde ocorre a troca de gases. O oxigênio entra no sangue e o dióxido de carbono é eliminado durante a respiração."
+        },
+        {
+          "id": "amarelaozinho",
+          "nome": "Amarelão",
+          "descricao": "Doença parasitária causada pelo nematódeo Ancylostoma. Transmitida por contato direto com solo contaminado, causa anemia e desnutrição nos infectados."
+        },
+        {
+          "id": "androceu",
+          "nome": "Androceu",
+          "descricao": "Estrutura reprodutiva masculina da flor que contém os estames. Responsável pela produção de pólen necessário para a reprodução das plantas."
+        },
+        {
+          "id": "angiosperma",
+          "nome": "Angiosperma",
+          "descricao": "Plantas que possuem flores e frutos para reprodução. São as plantas mais evoluídas e representam a maioria das espécies vegetais do planeta."
+        },
+        {
+          "id": "antibiotico",
+          "nome": "Antibiótico",
+          "descricao": "Substância que elimina ou inibe o crescimento de bactérias. Medicamento essencial no tratamento de infecções bacterianas em seres humanos."
+        },
+        {
+          "id": "anticorpo-1",
+          "nome": "Anticorpo 1",
+          "descricao": "Proteína produzida pelo sistema imunológico para combater agentes invasores. Cada anticorpo é específico para um antígeno particular do corpo."
+        },
+        {
+          "id": "anticorpo-2",
+          "nome": "Anticorpo 2",
+          "descricao": "Moléculas de defesa que se ligam aos antígenos para neutralizá-los ou marcá-los para destruição. Essenciais para a imunidade humoral adquirida."
+        },
+        {
+          "id": "antigeno",
+          "nome": "Antígeno",
+          "descricao": "Substância estranha ao organismo que estimula a resposta imunológica. Pode ser proteína, polissacarídeo ou lipídio originário de patógenos."
+        },
+        {
+          "id": "apendice",
+          "nome": "Apêndice",
+          "descricao": "Pequeno tubo conectado ao intestino grosso com função relacionada ao sistema imunológico. Sua inflamação causa apendicite que requer tratamento urgente."
+        },
+        {
+          "id": "aquecimento-global",
+          "nome": "Aquecimento Global",
+          "descricao": "Aumento da temperatura média da Terra causado principalmente por emissão de gases de efeito estufa. Consequência de atividades humanas que alteram o clima planetário."
+        },
+        {
+          "id": "aracnideos",
+          "nome": "Aracnídeos",
+          "descricao": "Classe de artrópodes que inclui aranhas, escorpiões e ácaros. Possuem oito patas e representam milhares de espécies terrestres e aéreas."
+        },
+        {
+          "id": "arterias-1",
+          "nome": "Artérias 1",
+          "descricao": "Vasos sanguíneos que transportam sangue oxigenado do coração para os órgãos. Possuem paredes musculares elásticas que resistem à pressão do sangue."
+        },
+        {
+          "id": "arterias-2",
+          "nome": "Artérias 2",
+          "descricao": "Estruturas vasculares especializadas em distribuir sangue rico em oxigênio nos tecidos. Movem-se em pulsos sincronizados com as batidas do coração."
+        },
+        {
+          "id": "ascaridiase",
+          "nome": "Ascaridíase",
+          "descricao": "Infecção parasitária causada pelo nematódeo Ascaris lumbricoides. Transmitida por ingestão de alimentos contaminados, afeta principalmente crianças."
+        },
+        {
+          "id": "asma",
+          "nome": "Asma",
+          "descricao": "Doença inflamatória crônica das vias respiratórias que causa dificuldade respiratória. Pode ser desencadeada por alergias, exercício ou fatores ambientais."
+        }
+      ]
+    },
+    {
+      "id": "ciencias-humanas",
+      "label": "Ciências Humanas e sua Tecnologias",
+      "termos": [
+        {
+          "id": "abdicar-trono",
+          "nome": "Abdicar Trono",
+          "descricao": "Ato de renunciar voluntariamente ao trono e poderes régios. Evento importante na história política que altera a sucessão do poder monárquico."
+        },
+        {
+          "id": "absolutismo",
+          "nome": "Absolutismo",
+          "descricao": "Sistema de governo onde o monarca possui poder absoluto e indivisível. Predominou na Europa entre os séculos XVI e XVIII, justificado pela 'vontade divina'."
+        },
+        {
+          "id": "africa-do-sul",
+          "nome": "África do Sul",
+          "descricao": "País localizado na ponta sul do continente africano com história marcada pelo apartheid. Atualmente é uma democracia multirracial na região austral da África."
+        },
+        {
+          "id": "alforria",
+          "nome": "Alforria",
+          "descricao": "Documento legal que liberta um escravo de seu senhor. Instituição jurídica importante na história colonial brasileira que garantia liberdade individual."
+        },
+        {
+          "id": "alma",
+          "nome": "Alma",
+          "descricao": "Conceito filosófico e religioso que representa a essência espiritual de um ser. Discussão central na filosofia ocidental sobre a natureza da consciência."
+        },
+        {
+          "id": "altitude",
+          "nome": "Altitude",
+          "descricao": "Altura de um lugar em relação ao nível do mar medida em metros. Influencia o clima, vegetação e condições de vida em diferentes regiões geográficas."
+        },
+        {
+          "id": "america-latina",
+          "nome": "América Latina",
+          "descricao": "Região geográfica das Américas onde predominam línguas latinas como espanhol e português. Compartilha história colonial, cultural e desafios socioeconômicos similares."
+        },
+        {
+          "id": "antes-de-cristo",
+          "nome": "Antes de Cristo",
+          "descricao": "Período histórico anterior ao nascimento de Jesus Cristo. Referencia temporal usada na cronologia ocidental para datar eventos históricos antigos."
+        },
+        {
+          "id": "antropologia",
+          "nome": "Antropologia",
+          "descricao": "Ciência que estuda o ser humano, sua cultura, sociedade e evolução. Analisa comportamentos e estruturas sociais de diferentes grupos e civilizações."
+        },
+        {
+          "id": "apogeu",
+          "nome": "Apogeu",
+          "descricao": "Ponto mais alto ou época de maior esplendor de uma civilização ou império. Momento de maior poder, influência e desenvolvimento de um reino ou cultura."
+        },
+        {
+          "id": "argentina",
+          "nome": "Argentina",
+          "descricao": "País localizado no cone sul da América do Sul com grande extensão territorial. Conhecida por sua economia, cultura europeia e rico patrimônio cultural."
+        },
+        {
+          "id": "aristoteles",
+          "nome": "Aristóteles",
+          "descricao": "Filósofo grego antigo que desenvolveu sistema completo de filosofia. Contribuiu significativamente para lógica, metafísica, ética e ciências naturais."
+        },
+        {
+          "id": "assembleia-legislativa",
+          "nome": "Assembleia Legislativa",
+          "descricao": "Corpo legislativo responsável por criar e aprovar leis. Representa o poder legislativo em governos democráticos e constitucionais."
+        }
+      ]
+    },
+    {
+      "id": "linguagens-codigos",
+      "label": "Linguagens Códigos e suas Tecnologias",
+      "termos": [
+        {
+          "id": "abstrato",
+          "nome": "Abstrato",
+          "descricao": "Conceito que existe apenas na mente, sem forma material ou concreta. Opõe-se ao concreto e representa ideias, sentimentos e conceitos intangíveis."
+        },
+        {
+          "id": "adjetivo",
+          "nome": "Adjetivo",
+          "descricao": "Classe de palavras que qualifica, modifica ou descreve substantivos. Atribui características, propriedades e aspectos aos seres e objetos nomeados."
+        },
+        {
+          "id": "adverbio",
+          "nome": "Advérbio",
+          "descricao": "Classe gramatical que modifica verbos, adjetivos ou outros advérbios. Indica circunstâncias de tempo, lugar, modo, intensidade e dúvida."
+        },
+        {
+          "id": "alfabetizacao",
+          "nome": "Alfabetização",
+          "descricao": "Processo de ensino e aprendizagem de leitura e escrita. Habilidade fundamental para participação plena na sociedade e acesso ao conhecimento."
+        },
+        {
+          "id": "aliteracao",
+          "nome": "Aliteração",
+          "descricao": "Repetição de sons consonantais iguais ou semelhantes em palavras sucessivas. Recurso estilístico que cria efeito sonoro e ritmo no texto."
+        },
+        {
+          "id": "ambiguidade",
+          "nome": "Ambiguidade",
+          "descricao": "Qualidade de possuir múltiplos significados ou interpretações possíveis. Pode criar confusão no entendimento ou ser usada como recurso literário intencional."
+        },
+        {
+          "id": "antitese",
+          "nome": "Antítese",
+          "descricao": "Figura de linguagem que expõe contraste entre ideias ou palavras opostas. Cria efeito de oposição para dar ênfase e profundidade ao discurso."
+        },
+        {
+          "id": "aplicativo",
+          "nome": "Aplicativo",
+          "descricao": "Software ou programa desenvolvido para realizar funções específicas em dispositivos. Ferramenta tecnológica que facilita tarefas do usuário no computador ou celular."
+        },
+        {
+          "id": "arcadismo",
+          "nome": "Arcadismo",
+          "descricao": "Movimento literário do século XVIII que valorizava a simplicidade e a natureza. Influenciado pelo Iluminismo e pela razão, representou transição para o Neoclassicismo."
+        },
+        {
+          "id": "argumento",
+          "nome": "Argumento",
+          "descricao": "Razão ou conjunto de razões apresentadas para provar ou defender uma tese. Elemento fundamental na construção de textos argumentativos e persuasivos."
+        },
+        {
+          "id": "assonancia",
+          "nome": "Assonância",
+          "descricao": "Repetição de sons vocálicos iguais ou semelhantes em palavras próximas. Recurso sonoro que cria musicalidade e ritmo em poesia e prosa."
+        },
+        {
+          "id": "aumentativo",
+          "nome": "Aumentativo",
+          "descricao": "Sufixo ou palavra que aumenta o tamanho ou intensidade do significado original. Exemplos incluem palavras como 'grandão' e 'belíssimo' na língua portuguesa."
+        },
+        {
+          "id": "autor",
+          "nome": "Autor",
+          "descricao": "Pessoa responsável pela criação de uma obra literária, artística ou intelectual. Figura central na produção de textos que expressa sua visão e propósitos."
+        },
+        {
+          "id": "avaliacao",
+          "nome": "Avaliação",
+          "descricao": "Processo de análise e julgamento de qualidade, valor ou conhecimento. Ferramenta fundamental na educação e em diferentes contextos profissionais."
+        }
+      ]
+    },
+    {
+      "id": "matematica-tecnologias",
+      "label": "Matemática e suas Tecnologias",
+      "termos": [
+        {
+          "id": "adicao",
+          "nome": "Adição",
+          "descricao": "Operação aritmética básica que combina duas ou mais quantidades. Representada pelo símbolo '+' e fundamental para cálculos matemáticos elementares."
+        },
+        {
+          "id": "algoritmo",
+          "nome": "Algoritmo",
+          "descricao": "Sequência ordenada de passos que resolve um problema ou realiza uma tarefa. Conceito fundamental em programação e matemática computacional."
+        },
+        {
+          "id": "centenas",
+          "nome": "Centenas",
+          "descricao": "Unidade de medida que representa 100 unidades. Posição de valor no sistema decimal que ajuda na composição de números maiores."
+        },
+        {
+          "id": "centimetro",
+          "nome": "Centímetro",
+          "descricao": "Unidade de medida de comprimento equivalente a 1/100 de metro. Medida fundamental no sistema métrico decimal internacional."
+        },
+        {
+          "id": "dezena",
+          "nome": "Dezena",
+          "descricao": "Agrupamento de 10 unidades na base decimal. Posição de valor importante no sistema numérico que determina a magnitude dos números."
+        },
+        {
+          "id": "divisao",
+          "nome": "Divisão",
+          "descricao": "Operação aritmética que distribui uma quantidade em partes iguais. Operação inversa da multiplicação representada pelo símbolo '÷' ou '/'."
+        },
+        {
+          "id": "dobro",
+          "nome": "Dobro",
+          "descricao": "Quantidade multiplicada por 2 ou duas vezes maior. Conceito básico de multiplicação usado frequentemente em problemas matemáticos."
+        },
+        {
+          "id": "estatistica",
+          "nome": "Estatística",
+          "descricao": "Ramo da matemática que coleta, analisa e interpreta dados numéricos. Ferramenta essencial para entender tendências e padrões em fenômenos diversos."
+        },
+        {
+          "id": "expressao-aritmetica",
+          "nome": "Expressão Aritmética",
+          "descricao": "Combinação de números e operações (+, -, ÷, ×) a ser resolvida. Expressão matemática cujo resultado depende da ordem correta de operações."
+        },
+        {
+          "id": "formas-geometricas",
+          "nome": "Formas Geométricas",
+          "descricao": "Figuras matemáticas definidas por pontos, linhas e superfícies no espaço. Incluem triângulos, quadrados, círculos e sólidos geométricos."
+        },
+        {
+          "id": "fracao",
+          "nome": "Fração",
+          "descricao": "Representação de um número racional como divisão de dois inteiros. Expressa partes de um todo e é fundamental em matemática e suas aplicações."
+        },
+        {
+          "id": "geometria",
+          "nome": "Geometria",
+          "descricao": "Ramo da matemática que estuda formas, tamanhos e propriedades espaciais de figuras. Analisa relacionamentos entre pontos, linhas, superfícies e volumes."
+        },
+        {
+          "id": "grafico",
+          "nome": "Gráfico",
+          "descricao": "Representação visual de dados matemáticos e relações numéricas. Ferramenta que facilita compreensão de tendências e comparações de informações."
+        }
+      ]
+    }
+  ]
+}
