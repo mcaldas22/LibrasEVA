@@ -54,7 +54,7 @@
 
     <main class="disc-main">
       <p id="term-page-disc" class="text-muted"></p>
-      <video id="term-page-video" controls playsinline preload="metadata" class="auto-termo-video"></video>
+      <video id="player" controls playsinline preload="metadata" class="auto-termo-video"></video>
       <div id="term-page-videos-list" class="auto-termos-tabs"></div>
       <p id="term-page-desc" class="modal-transcricao"></p>
     </main>
@@ -380,6 +380,7 @@
     Se firebaseConfig.apiKey === "REPLACE_ME", usa automaticamente
     o fallback data/terms.json (sem necessidade de Firebase).
   -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <script type="module" src="script.js"></script>
 
   <!-- Registro do Service Worker é centralizado no script.js -->

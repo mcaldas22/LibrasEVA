@@ -5,6 +5,7 @@ const VIDEO_EXTENSIONS = [".mp4", ".webm", ".mov", ".mkv", ".avi", ".wmv"];
 let termosCache = [];
 let currentDisciplina = null;
 let currentTermoId = null;
+let hlsInstance = null;
 
 function $(id) { return document.getElementById(id); }
 
@@ -231,7 +232,72 @@ async function carregarCatalogoLocalJson() {
   }
 }
 
+async function carregarCatalogoVideosJson() {
+  try {
+    const res = await fetch("./videos.json", { cache: "no-store" });
+    if (!res.ok) return [];
+    const payload = await res.json();
+    if (!payload || typeof payload !== "object") return [];
+
+    const agrupado = new Map();
+
+    Object.entries(payload).forEach(([disciplinaNome, itens]) => {
+      if (!Array.isArray(itens)) return;
+      const canon = canonizarDisciplina(disciplinaNome);
+
+      itens.forEach((item) => {
+        const termo = (item?.termo || "").trim();
+        if (!termo) return;
+
+        const urlVideo = String(item?.video || "").trim();
+        const descricao = String(item?.descricao || "").trim();
+        const key = `${canon.id}|${normalizar(termo)}`;
+
+        if (!agrupado.has(key)) {
+          agrupado.set(key, {
+            id: `${canon.id}-${slug(termo)}`,
+            termo,
+            disciplinaId: canon.id,
+            disciplinaNome: canon.label,
+            descricao: descricao || explicacaoCurta(termo, canon.label),
+            videos: []
+          });
+        }
+
+        const entry = agrupado.get(key);
+        if (descricao && !entry.descricao) entry.descricao = descricao;
+
+        if (urlVideo && !urlVideo.includes("INSIRA_LINK_GUMLET_AQUI")) {
+          entry.videos.push({
+            fileName: extrairNomeArquivo(urlVideo) || `${termo}.m3u8`,
+            src: urlVideo
+          });
+        }
+      });
+    });
+
+    const termos = [...agrupado.values()]
+      .filter((t) => t.videos.length > 0)
+      .sort((a, b) => {
+        const d = a.disciplinaNome.localeCompare(b.disciplinaNome, "pt-BR");
+        if (d !== 0) return d;
+        return a.termo.localeCompare(b.termo, "pt-BR");
+      });
+
+    return termos;
+  } catch (e) {
+    console.error("Falha ao carregar videos.json:", e);
+    return [];
+  }
+}
+
 async function carregarCatalogoDasPastas() {
+  const termosVideosJson = await carregarCatalogoVideosJson();
+  if (termosVideosJson.length) {
+    termosCache = termosVideosJson;
+    return;
+  }
+
   const rootUrl = new URL("./videos para adicionar/", window.location.href).toString();
   let rootEntries = await listarEntradasDiretorio(rootUrl);
 
@@ -600,12 +666,41 @@ function buscarGlobal(query) {
   renderTermos(termos, "busca-resultados");
 }
 
-function selecionarVideoTermo(src, btn) {
-  const video = $("term-page-video");
-  if (video) {
-    video.src = src;
-    video.load();
+function carregarVideo(url) {
+  const player = $("player");
+  if (!player || !url) return;
+
+  // Libera instancias anteriores para evitar vazamento e conflito de playback.
+  if (hlsInstance) {
+    hlsInstance.destroy();
+    hlsInstance = null;
   }
+
+  const streamUrl = String(url).trim();
+
+  if (window.Hls && window.Hls.isSupported()) {
+    hlsInstance = new window.Hls();
+    hlsInstance.loadSource(streamUrl);
+    hlsInstance.attachMedia(player);
+    hlsInstance.on(window.Hls.Events.MANIFEST_PARSED, () => {
+      player.play().catch(() => {});
+    });
+    return;
+  }
+
+  // Safari e navegadores com suporte nativo a HLS.
+  if (player.canPlayType("application/vnd.apple.mpegurl")) {
+    player.src = streamUrl;
+    player.load();
+    player.play().catch(() => {});
+    return;
+  }
+
+  mostrarToast("Seu navegador nao suporta reproducao HLS.");
+}
+
+function selecionarVideoTermo(src, btn) {
+  carregarVideo(src);
   const list = $("term-page-videos-list");
   if (list) list.querySelectorAll(".auto-termo-tab").forEach((b) => b.classList.remove("ativo"));
   if (btn) btn.classList.add("ativo");
@@ -642,8 +737,12 @@ function abrirPlayer(termoId) {
 }
 
 function fecharPlayer() {
-  const video = $("term-page-video");
+  const video = $("player");
   if (video) video.pause();
+  if (hlsInstance) {
+    hlsInstance.destroy();
+    hlsInstance = null;
+  }
   currentTermoId = null;
 }
 
