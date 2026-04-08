@@ -550,7 +550,6 @@ function renderGridDisciplinas() {
   };
 
   const disponiveis = disciplinas.filter((d) => d.qtd > 0);
-  const emBreve = disciplinas.filter((d) => d.qtd === 0);
 
   disponiveis.forEach((d) => grid.appendChild(criarCardDisciplina(d, false)));
 
@@ -563,14 +562,13 @@ function renderGridDisciplinas() {
     <small>Em breve</small>`;
   cardContribuicoes.addEventListener("click", () => irParaContribuicoesEmBreve());
 
-  if (disponiveis.length && (emBreve.length || cardContribuicoes)) {
+  if (disponiveis.length) {
     const separador = document.createElement("div");
     separador.className = "disciplinas-separador";
     separador.innerHTML = "<span>Em breve</span>";
     grid.appendChild(separador);
   }
 
-  emBreve.forEach((d) => grid.appendChild(criarCardDisciplina(d, true)));
   grid.appendChild(cardContribuicoes);
 }
 
@@ -611,9 +609,6 @@ function irParaStart() { mostrarTela("screen-start"); }
 async function irParaMenu() {
   await carregarCatalogoDasPastas();
   renderGridDisciplinas();
-  const totalTermos = termosCache.length;
-  const totalVideos = termosCache.reduce((acc, t) => acc + (t.videos?.length || 0), 0);
-  mostrarToast(`Importacao concluida: ${totalTermos} termos e ${totalVideos} videos.`);
   mostrarTela("screen-menu");
 }
 
